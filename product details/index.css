@@ -1,0 +1,159 @@
+
+.disabled 
+{
+    color: gray !important;
+}
+.product-img {
+    height: 100%;
+    background-image: url("https://static.cotemaison.fr/medias_11308/w_2048,h_1146,c_crop,x_0,y_79/w_640,h_360,c_fill,g_north/v1485610474/pomme-de-terre-4_5790003.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+    transition: opacity 0.3s;
+    cursor:pointer;
+}
+@media only screen and (max-width: 992px) {
+    .product-img {
+        height: 500px !important;
+    }
+}
+
+.product-img:hover{
+    opacity: 0.9;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+}
+
+.product-content{
+    padding: 0 1rem;
+}
+.product-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    background: #12263a;
+}
+.product-rating{
+    color: #F49A37;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price-quantity p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F49A37;
+}
+
+.product-price {
+    float: left;
+}
+.product-quantity {
+    float: right;
+}
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.product-detail ul{
+    padding-left: 0.4rem;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    list-style: none;
+    opacity: 0.9;
+}
+.product-detail ul li i{
+    color: #9CCA4E;
+    font-size: 1.1rem;
+    padding-right: 0.4rem;
+}
+.product-detail ul li span{
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.product-detail ul li ul{
+    padding-left: 1.6rem;
+}
+.product-detail ul li ul .sell-type{
+    font-weight: 800;
+    font-size: 0.91rem;
+    opacity: 0.8;
+    padding: 0.15rem;
+    color: #f9870d;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    /*color: #fff !important;*/
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    transition: all .3s;
+}
+.purchase-info .btn:first-of-type{
+    color: #F49A37;
+    border: #F49A37 solid 2px;
+    width: 40%;
+    /*background: #F49A37;*/
+}
+.purchase-info .btn:last-of-type{
+    color: #9CCA4E;
+    border: #9CCA4E solid 2px;
+    width: 40%;
+    /*background: #9CCA4E;*/
+}
+.purchase-info .btn:focus{
+    outline: none;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+.purchase-info .btn:active{
+    background-color: #F49A37;
+}
+.purchase-info .btn i{
+    padding-right: 10px;
+}
+.purchase-info .btn.sell:hover{
+    box-shadow: 0px 1px 5px rgba(255, 236, 236, 0.4);
+    background-color: #F49A37;
+    color: #fff;
+}
+.purchase-info .btn.add-to-cart:hover{
+    box-shadow: 0px 1px 5px rgba(255, 236, 236, 0.4);
+    background-color: #9CCA4E;
+    color: #fff;
+}
