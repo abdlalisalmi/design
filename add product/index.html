@@ -26,13 +26,10 @@
 		<title>Hello, world!</title>
 	</head>
 	<body>
-		<br />
-		<br />
-		<br />
-		<br />
+
 		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
+			<div class="row add-product">
+				<div class="col-12 add-product__title">
 					<h3>Ajouter un produit</h3>
 				</div>
 				<div class="col-12">
@@ -41,37 +38,28 @@
 
 						<div class="row mb-4">
 							<div class="col-6">
-								<label for="basic-url" class="form-label">Produit:</label>
+								<label for="basic-url" class="form-label">Produit</label>
 								<select class="form-select" aria-label="Default select example">
 									<option selected disabled>choisir le produit</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
 								</select>
+								<small class="form-text text-muted">Choisissez le produit que vous souhaitez vendre.</small>
 							</div>
 							<div class="col-6">
-								<label for="basic-url" class="form-label">Type:</label>
+								<label for="basic-url" class="form-label">Type</label>
 								<select class="form-select" aria-label="Default select example">
 									<option selected disabled>choisir le type de Produit</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
 								</select>
+								<small class="form-text text-muted">Choisissez le type de produit que vous souhaitez vendre.</small>
 							</div>
 						</div>
 
-						<div class="row mb-4">
-							<div class="col-6">
-								<label for="basic-url" class="form-label">Adresse:</label>
-								<input type="text" class="form-control">
-							</div>
-							<div class="col-6">
-								<label for="basic-url" class="form-label">localisation GPS:</label>
-								<button class="btn btn-primary d-block">Cliquez pour ajouter votre position GPS</button>
-							</div>
-						</div>
-
-						<div class="row mb-4">
+						<div class="row mb-2">
 							<div class="col-12 mb-2">
-								<label for="basic-url" class="form-label">Type de vente:</label>
+								<label for="basic-url" class="form-label">Type de vente</label>
 								<select class="form-select" aria-label="Default select example">
 									<option selected disabled>choisir le type de vente</option>
 									<option value="1">Vente sur terre</option>
@@ -84,17 +72,17 @@
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Superficie</span>
 										<input type="number" min="0" class="form-control" placeholder="superficie en hectare">
-										<span class="input-group-text">hectare</span>
+										<span class="input-group-text scale">hectare</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Prix de vente</span>
 										<input type="number" min="0" class="form-control" placeholder="prix de vente en Dh">
-										<span class="input-group-text">Dh</span>
+										<span class="input-group-text scale">Dh</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Montant de l'avance</span>
 										<input type="number" min="0" class="form-control" placeholder="montant de l'avance en Dh">
-										<span class="input-group-text">Dh</span>
+										<span class="input-group-text scale">Dh</span>
 									</div>
 								</div>
 
@@ -102,14 +90,14 @@
 							<!--if à la récolte-->
 								<div class="col-12 mt-2">
 									<div class="input-group mb-3">
-										<span class="input-group-text w-50">Prix de vente</span>
+										<span class="input-group-text w-50">Prix de vente de Kg</span>
 										<input type="number" min="0" class="form-control" placeholder="prix de vente en Dh">
-										<span class="input-group-text">Dh/Kg</span>
+										<span class="input-group-text scale">Dh/Kg</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Quantité globale</span>
 										<input type="number" min="0" class="form-control" placeholder="quantité globale en Kg">
-										<span class="input-group-text">Dh</span>
+										<span class="input-group-text scale">Dh</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Date de disponibilité</span>
@@ -124,8 +112,8 @@
 									</div>
 								</div>
 
-								<div class="col-12 mb-2">
-									<label for="basic-url" class="form-label">Vente en lots::</label>
+								<div class="col-12 mb-3 mt-2">
+									<label for="basic-url" class="form-label">Vente en lots</label>
 									<select class="form-select" aria-label="Default select example">
 										<option value="1">Non</option>
 										<option value="2">Oui</option>
@@ -138,22 +126,39 @@
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Quantité du lot</span>
-										<input type="number" min="0" class="form-control" placeholder="calculer Automatiquement" disabled>
-										<span class="input-group-text">Kg/Lot</span>
+										<input type="number" min="0" class="form-control" placeholder="calculer automatiquement" disabled>
+										<span class="input-group-text scale">Kg/Lot</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Seuil minimal de vente</span>
-										<input type="number" min="0" class="form-control" placeholder="*********">
-										<span class="input-group-text">Lot</span>
+										<input type="number" min="0" class="form-control" placeholder="entre le seuil minimal de vente">
+										<span class="input-group-text scale">Lot</span>
 									</div>
 									<div class="input-group mb-3">
 										<span class="input-group-text w-50">Prix du lot</span>
-										<input type="number" min="0" class="form-control" placeholder="calculer Automatiquement" disabled>
-										<span class="input-group-text">Dh</span>
+										<input type="number" min="0" class="form-control" placeholder="calculer automatiquement" disabled>
+										<span class="input-group-text scale">Dh</span>
 									</div>
 						</div>
 
+						<div class="row mb-4">
+							<div class="col-6">
+								<label for="basic-url" class="form-label">Adresse</label>
+								<input type="text" class="form-control">
+								<small class="form-text text-muted">Entrez votre adresse.</small>
+							</div>
+							<div class="col-6">
+								<label for="basic-url" class="form-label">Localisation GPS</label>
+								<span class="btn bnt-gps "><i class="bi bi-geo-alt-fill"></i> Position GPS</span>
+								<input type="hidden" value="">
+								<small class="form-text text-muted">Cliquez sur le bouton pour ajouter votre position GPS.</small>
+							</div>
+						</div>
 
+						<div class="add-product__footer">
+							<button class="add">ajouter</button>
+							<button class="cancel">Annuler</button>
+						</div>
 					</form>
 				</div>
 			</div>

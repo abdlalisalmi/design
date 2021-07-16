@@ -1,9 +1,102 @@
 
 
 
-/*.add-product {
-*/
-}
-.add-product h3 {
+
+/* .add-product h3 {
     font-size: 1.8rem;
+    background-color: #f8f9fa;
+} */
+
+.add-product .add-product__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f8;
+    border-radius: 0.6rem;
+    margin: 2.3rem 0 2.3rem 0;
+}
+.add-product .add-product__title h3{
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #444444;
+    opacity: .9;
+    text-transform: uppercase;
+}
+.add-product span {
+    background-color: #f7f7f8;
+}
+.add-product input,
+.add-product span,
+.add-product select {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: #2b2d424d solid 0.05rem;
+    box-shadow: none;
+    font-size: 0.88rem;
+    opacity: 0.8;
+}
+.add-product input:focus,
+.add-product select:focus {
+    border: #9CCA4E solid 0.05rem;
+    box-shadow: #9cca4ea7 0px 1px 2px 0px, #9cca4ea7 0px 1px 3px 1px;
+}
+.add-product label {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.add-product .bnt-gps {
+    display: block;
+    /* color: #F49A37; */
+}
+.add-product .bnt-gps:hover {
+    border: #9CCA4E solid 0.05rem;
+    box-shadow: #9cca4ea7 0px 1px 2px 0px, #9cca4ea7 0px 1px 3px 1px;
+    /* color: #9CCA4E; */
+}
+.add-product .scale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    background-color: #f7f7f8;
+    font-weight: 500;
+}
+
+.add-product .add-product__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.add-product .add-product__footer button{
+    width: 30%;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    border: #2b2d42 solid 0.1rem;
+    color: #2b2d42;
+    background-color: transparent;
+    text-transform: capitalize;
+    transition: all .5s;
+}
+.add-product .add-product__footer .add{
+    border: #9CCA4E solid 0.12rem;
+    color: #9CCA4E;
+}
+
+.add-product .add-product__footer .cancel{
+    border: #f93f4f solid 0.12rem;
+    color: #f93f4f;
+}
+.add-product .add-product__footer .add:hover{
+    background-color: #9CCA4E;
+    color: #fff;
+}
+
+.add-product .add-product__footer .cancel:hover{
+    background-color: #f93f4f;
+    color: #fff;
 }
