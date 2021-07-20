@@ -19,6 +19,7 @@
 }
 
 .dash_sidebar {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,7 +27,6 @@
     height: 100vh;
     width: 260px;
     border-right: #e5e7eb solid .1rem;
-    position: fixed;
 }
 
 .dash_sidebar .dash_sidbar__item {
@@ -124,7 +124,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     background-color: #fff;
 }
 
@@ -135,15 +135,20 @@
     align-items: center;
 }
 .dash_navbar div.left div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #eaffb7;
     color: #00000070;
     height: 40px;
     width: 40px;
-    padding: 0.5rem;
+    padding: 0.1rem 0.5rem 1rem 0.5rem;
     border-radius: 0.4rem;
     font-size: 1.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
+    display: none;   
 }
 
 .dash_navbar div.right div {
@@ -166,47 +171,58 @@
 }
 
 .dash_container {
-    padding: 2rem;
+    padding: 0 2rem;
 }
-.dash_container .analytics{
-    display: flex;
-    flex-direction: row;
-    
-}
+
 .dash_container .analytics{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 }
-.dash_container .analytics div{
+.dash_container .analytics .analytics_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-bottom: rgba(0, 0, 0, 0.07) solid 0.1rem;
+}
+
+.dash_container .analytics div.counter{
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
     background-color: #fff;
     margin-bottom: 0.5rem;
-    padding: 0.4rem 0.2rem 0 .2rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 0.5rem;
 }
 .dash_container .analytics i{
     font-size: 2.5rem;
     opacity: 0.1;
 }
-.dash_container .analytics div div{
+.dash_container .analytics div.counter div{
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
     align-items: center;
 }
-.dash_container .analytics div div span{
+.dash_container .analytics div.counter div span{
     font-size: .8rem;
     opacity: 0.5;
 }
-.dash_container .analytics div div p{
+.dash_container .analytics div.counter div p{
     font-size: 1rem;
     font-weight: 600;
     opacity: 0.7;
+    margin-bottom: 0;
 }
 .dash_container .analytics div.percent{
     background-color: #eaffb7;
@@ -256,27 +272,36 @@
 }
 
 
+/*****************/
 
-/* .dash_sidebar.show {
-    width: 40%;
+.dash_sidebar.show {
+    width: 260px;
     left: 0px;
     overflow: hidden;
-    height: 100vh;
     z-index: 999;
   }
 
+.dash_content.show {
+    left: 260px;
+    width: calc(100% - 260px);
+}
+
 @media only screen and (max-width: 992px) {
-    .dashboard {
-        position: unset;
-    }
     .dash_sidebar {
+        position: absolute;
         width: 0;
         left: -20px;
         overflow: hidden;
         background-color: #fff;
+        transition: all 0.3s;
+    }
+    .dash_navbar div.left div{
+        display: unset;
     }
     .dash_content {
         position: absolute;
-        width: auto;
+        width: 100%;
+        left: 0;
+        transition: all 0.3s;
     }
-  } */
+  }
