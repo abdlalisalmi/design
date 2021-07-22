@@ -18,6 +18,9 @@
     left: 0;
 }
 
+/***********************/
+/*        SIDEBAR      */
+/***********************/
 .dash_sidebar {
     position: fixed;
     display: flex;
@@ -108,14 +111,17 @@
     margin-left: 0.5rem;
 }
 
-
+/************************/
+/* DASHBOARD RIGHT SIDE */
+/************************/
 .dash_content {
     background-color: rgb(128,128,128, 0.07);
     position: absolute;
     top: 0;
     left: 260px;
     width: calc(100% - 260px);
-    /* height: 100vh; */
+    min-height: 100vh;
+    /* height: 100%; */
     /* padding: 0 1rem 0 1rem; */
 }
 
@@ -213,7 +219,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
-    align-items: center;
+    align-items: flex-start;
 }
 .dash_container .analytics div.counter div span{
     font-size: .8rem;
@@ -281,6 +287,21 @@
 .analytics .modal .modal-header button i{
     font-size: 0.8rem;
 }
+
+.analytics .modal .modal-body input {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.analytics .modal .modal-body label {
+    font-weight: 400;
+    opacity: 0.7;
+}
+.analytics .modal .modal-body a.form-control {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+}
+
 .analytics .modal .modal-footer button {
     background-color: #83d866;
     border-radius: 0.4rem;
@@ -289,6 +310,9 @@
     font-weight: 400;
     border: none;
     transition: all 0.3s;
+}
+.analytics .modal .modal-footer button.delete {
+    background-color: #ff8f89;
 }
 .analytics .modal .modal-footer button:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -408,7 +432,9 @@
 }
 
 
-/*****************/
+/******************/
+/*  MEDIA QUERYS  */
+/******************/
 
 .dash_sidebar.show {
     width: 260px;

@@ -21,16 +21,20 @@
 </head>
 
 <body>
-
 	<div class="dashboard">
 		<div class="dash_sidebar">
 			<div>
-				<div class="dash_sidbar__item active"><i class="bi bi-house"></i> Dashboard</div>
+				<div class="dash_sidbar__item active">
+					<i class="bi bi-house"></i> Dashboard
+				</div>
 
-				<div class="dash_sidbar__item mt-2"><i class="bi bi-person"></i> Profile</div>
-
+				<div class="dash_sidbar__item mt-2">
+					<i class="bi bi-person"></i> Profile
+				</div>
 			</div>
-			<div class="dash_sidbar__logout">Se déconnecter <i class="bi bi-box-arrow-right"></i></div>
+			<div class="dash_sidbar__logout">
+				Se déconnecter <i class="bi bi-box-arrow-right"></i>
+			</div>
 		</div>
 
 		<div class="dash_content">
@@ -48,15 +52,13 @@
 					<div>
 						<i class="bi bi-bell"></i>
 					</div>
-					<img src="../avatart.png">
+					<img src="../avatart.png" />
 				</div>
 			</div>
 
 			<div class="dash_container">
 				<div class="row analytics">
-					<div class="analytics_title">
-						Dashboard
-					</div>
+					<div class="analytics_title">Dashboard</div>
 					<div class="counter col-lg-3 col-md-5">
 						<div>
 							<p>550</p>
@@ -86,25 +88,82 @@
 					<div class="container">
 						<div class="analytics_title_secondary">
 							<p class="mb-0">Liste du fermier</p>
-							<button class="btn" data-bs-toggle="modal"
-							data-bs-target="#addFarmerModal"><i class="bi bi-person-plus"></i> Ajoute un fermier</button>
-
+							<button class="btn" data-bs-toggle="modal" data-bs-target="#addFarmerModal">
+								<i class="bi bi-person-plus"></i> Ajoute un fermier
+							</button>
 						</div>
 						<!-- Add farmer Modal -->
-						<div class="modal fade" id="addFarmerModal" data-bs-backdrop="static"
-							data-bs-keyboard="false" tabindex="-1" aria-labelledby="addFarmerModalLabel"
-							aria-hidden="true">
+						<div class="modal fade" id="addFarmerModal" data-bs-backdrop="static" data-bs-keyboard="false"
+							tabindex="-1" aria-labelledby="addFarmerModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title" id="addFarmerModalLabel">Ajoute un fermier</h5>
-										<button type="button" class="btn" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i>	</button>
+										<h5 class="modal-title" id="addFarmerModalLabel">
+											Ajoute un fermier
+										</h5>
+										<button type="button" class="btn" data-bs-dismiss="modal">
+											<i class="bi bi-x-lg"></i>
+										</button>
 									</div>
 									<div class="modal-body">
-										...
+
+
+										<div class="row">
+											<div class="col mb-3">
+												<label>Prénom *</label>
+												<input type="text" class="form-control" placeholder="Fermier prenom"
+													required />
+											</div>
+											<div class="col mb-3">
+												<label>Nom *</label>
+												<input type="text" class="form-control" placeholder="Fermier nom"
+													required />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col form-group mb-3">
+												<label>Adresse *</label>
+												<input type="text" class="form-control" placeholder="Fermier adresse"
+													required />
+											</div>
+											<div class="col form-group mb-3">
+												<label>Numéro de CIN *</label>
+												<input type="text" class="form-control" placeholder="Fermier adresse"
+													required />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col form-group mb-3">
+												<label>Email *</label>
+												<input type="email" class="form-control"
+													placeholder="Fermier adresse e-mail" name="email" required />
+											</div>
+											<div class="col mb-3">
+												<label>Téléphone *</label>
+												<input type="number" class="form-control"
+													placeholder="Fermier telephone" required />
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<label>Fichiers CIN *</label>
+											<div class="col-lg-6">
+												<label>CIN Recto *</label>
+												<input type="file" class="form-control" name="cin_front" required>
+												</input>
+											</div>
+
+											<div class="col-lg-6">
+												<label>CIN Verso *</label>
+												<input type="file" class="form-control" name="cin_back"
+													required></input>
+											</div>
+										</div>
 									</div>
+
 									<div class="modal-footer">
-										<button type="button" class="btn"><i class="bi bi-person-plus"></i>  Ajoute</button>
+										<button type="button" class="btn">
+											<i class="bi bi-person-plus"></i> Ajoute
+										</button>
 									</div>
 								</div>
 							</div>
@@ -120,11 +179,9 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- Optional JavaScript; choose one of the two! -->
@@ -135,15 +192,15 @@
 		crossorigin="anonymous"></script>
 	<script>
 		function showSideBar() {
-			document.querySelector(".dash_sidebar").classList.toggle('show');
-			document.querySelector(".dash_content").classList.toggle('show');
+			document.querySelector(".dash_sidebar").classList.toggle("show");
+			document.querySelector(".dash_content").classList.toggle("show");
 			const sidebarBtn = document.querySelector("#sidebarBtn");
-			if (sidebarBtn.classList.contains('bi-list')) {
-				sidebarBtn.classList.remove('bi-list');
-				sidebarBtn.classList.add('bi-x');
+			if (sidebarBtn.classList.contains("bi-list")) {
+				sidebarBtn.classList.remove("bi-list");
+				sidebarBtn.classList.add("bi-x");
 			} else {
-				sidebarBtn.classList.remove('bi-x');
-				sidebarBtn.classList.add('bi-list');
+				sidebarBtn.classList.remove("bi-x");
+				sidebarBtn.classList.add("bi-list");
 			}
 		}
 	</script>
