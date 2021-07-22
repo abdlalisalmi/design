@@ -17,7 +17,7 @@
 		integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<title>Hello, world!</title>
+	<title>Rafiq Dashboard</title>
 </head>
 
 <body>
@@ -27,24 +27,8 @@
 			<div>
 				<div class="dash_sidbar__item active"><i class="bi bi-house"></i> Dashboard</div>
 
-				<div class="dash_sidbar__item mt-2" data-bs-toggle="collapse" href="#usersCollapse" role="button"
-					aria-expanded="false" aria-controls="usersCollapse"><i class="bi bi-people"></i> Users
-				</div>
-				<div class="collapse- dash_sidbar__item__list" id="usersCollapse">
-					<div class="list-item active"><i class="bi bi-circle-fill"></i> Rafiq's</div>
-					<div class="list-item"><i class="bi bi-circle-fill"></i> Farmer</div>
-					<div class="list-item"><i class="bi bi-circle-fill"></i> Client</div>
-				</div>
+				<div class="dash_sidbar__item mt-2"><i class="bi bi-person"></i> Profile</div>
 
-				<div class="dash_sidbar__item" data-bs-toggle="collapse" href="#productsCollapse" role="button"
-					aria-expanded="false" aria-controls="productsCollapse"><i class="bi bi-box-seam"></i></i> Products
-				</div>
-				<div class="collapse- dash_sidbar__item__list" id="productsCollapse">
-					<div class="list-item active"><i class="bi bi-circle-fill"></i> Products Cataloge</div>
-					<div class="list-item"><i class="bi bi-circle-fill"></i> Products</div>
-				</div>
-
-				<div class="dash_sidbar__item mb-2"><i class="bi bi-cart2"></i> Commands</div>
 			</div>
 			<div class="dash_sidbar__logout">Se déconnecter <i class="bi bi-box-arrow-right"></i></div>
 		</div>
@@ -73,41 +57,70 @@
 					<div class="analytics_title">
 						Dashboard
 					</div>
-					<div class="counter col-lg-2 col-md-5">
+					<div class="counter col-lg-3 col-md-5">
 						<div>
-							<p>50</p>
-							<span>Rafiq's</span>
+							<p>550</p>
+							<span>Dh</span>
 						</div>
 						<div class="percent">+15%</div>
-						<div><i class="bi bi-people"></i></div>
+						<div><i class="bi bi-currency-exchange"></i></div>
 					</div>
 
-					<div class="counter col-lg-2 col-md-5">
+					<div class="counter col-lg-3 col-md-5">
 						<div>
-							<p>560</p>
+							<p>12</p>
 							<span>Farmers</span>
 						</div>
 						<div class="percent">+25%</div>
 						<div><i class="bi bi-people"></i></div>
 					</div>
 
-					<div class="counter col-lg-2 col-md-5">
+					<div class="counter col-lg-3 col-md-5">
 						<div>
-							<p>150</p>
-							<span>Clients</span>
-						</div>
-						<div class="percent">+10%</div>
-						<div><i class="bi bi-people"></i></div>
-					</div>
-
-					<div class="counter col-lg-2 col-md-5">
-						<div>
-							<p>10550</p>
+							<p>50</p>
 							<span>Commands</span>
 						</div>
 						<div class="percent">+30%</div>
 						<div><i class="bi bi-box-seam"></i></div>
 					</div>
+					<div class="container">
+						<div class="analytics_title_secondary">
+							<p class="mb-0">Liste du fermier</p>
+							<button class="btn" data-bs-toggle="modal"
+							data-bs-target="#addFarmerModal"><i class="bi bi-person-plus"></i> Ajoute un fermier</button>
+
+						</div>
+						<!-- Add farmer Modal -->
+						<div class="modal fade" id="addFarmerModal" data-bs-backdrop="static"
+							data-bs-keyboard="false" tabindex="-1" aria-labelledby="addFarmerModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="addFarmerModalLabel">Ajoute un fermier</h5>
+										<button type="button" class="btn" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i>	</button>
+									</div>
+									<div class="modal-body">
+										...
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn"><i class="bi bi-person-plus"></i>  Ajoute</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="analytics_table container">
+							<div class="row analytics_table_row">
+								<div class="col-8 name">Abdelaali Es Salmi</div>
+								<div class="col-4 status active">Active</div>
+							</div>
+							<div class="row analytics_table_row">
+								<div class="col-8 name">Amine Tahiri</div>
+								<div class="col-4 status inactive">Inactive</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
