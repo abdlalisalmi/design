@@ -25,12 +25,13 @@
 	<div class="dashboard">
 		<div class="dash_sidebar">
 			<div>
-				<div class="dash_sidbar__item active"><i class="bi bi-house"></i> Dashboard</div>
+				<div class="dash_sidbar__item"><i class="bi bi-house"></i> Dashboard</div>
 
 				<div class="dash_sidbar__item mt-2"><i class="bi bi-people"></i> Users</div>
 
-				<div class="dash_sidbar__item mt-2" data-bs-toggle="collapse" href="#productsCollapse" role="button"
-					aria-expanded="false" aria-controls="productsCollapse"><i class="bi bi-box-seam"></i></i> Products
+				<div class="dash_sidbar__item mt-2 active" data-bs-toggle="collapse" href="#productsCollapse"
+					role="button" aria-expanded="false" aria-controls="productsCollapse"><i
+						class="bi bi-box-seam"></i></i> Products
 				</div>
 				<!-- <div class="collapse- dash_sidbar__item__list" id="productsCollapse">
 					<div class="list-item active"><i class="bi bi-circle-fill"></i> Products Cataloge</div>
@@ -64,42 +65,23 @@
 			<div class="dash_container">
 				<div class="row analytics">
 					<div class="analytics_title">
-						Dashboard
+						Products
 					</div>
-					<div class="counter col-lg-2 col-md-5">
-						<div>
-							<p>50</p>
-							<span>Rafiq's</span>
-						</div>
-						<div class="percent">+15%</div>
-						<div><i class="bi bi-people"></i></div>
-					</div>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="analytics_title_secondary">
+								Products
+							</div>
 
-					<div class="counter col-lg-2 col-md-5">
-						<div>
-							<p>560</p>
-							<span>Farmers</span>
-						</div>
-						<div class="percent">+25%</div>
-						<div><i class="bi bi-people"></i></div>
-					</div>
+							<div class="col-lg-10 analytics_table">
+								<div class="row analytics_table_row d-flex justify-content-around">
+									<div class="col-7 name">la pomme de terre</div>
+									<div class="col-2 status active"><i class="bi bi-pencil-square"></i> Éditer</div>
+									<div class="col-2 status inactive"><i class="bi bi-trash"></i> Supprimer</div>
+								</div>
+							</div>
 
-					<div class="counter col-lg-2 col-md-5">
-						<div>
-							<p>150</p>
-							<span>Clients</span>
 						</div>
-						<div class="percent">+10%</div>
-						<div><i class="bi bi-people"></i></div>
-					</div>
-
-					<div class="counter col-lg-2 col-md-5">
-						<div>
-							<p>10550</p>
-							<span>Commands</span>
-						</div>
-						<div class="percent">+30%</div>
-						<div><i class="bi bi-box-seam"></i></div>
 					</div>
 				</div>
 			</div>
