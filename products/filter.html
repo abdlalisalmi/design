@@ -1,0 +1,106 @@
+						<div className='col-12 filter-box active' id="filter-box">
+
+							<div class="row">
+
+								<!-- Filtre par Prix-->
+								<div class="col-lg-6 mb-4">
+									<div class="row">
+										<div class="col-12 p-0 mb-2">
+											<div>
+												<input class="form-check-input" type="checkbox" value=""
+													onClick={HandleFilterPriceClick} id="priceFilter"></input>
+												<label class="form-check-label" htmlFor="priceFilter">Filtre Par Prix</label>
+											</div>
+										</div>
+										<div class="col-12 pl-4">
+											<div class="input-group d-flex justify-content-around ml-4">
+												<input id="priceFilterMin" type="number" class="form-control text-input"
+													placeholder="Min" disabled={FilterPrice}></input>
+												<input id="priceFilterMax" type="number" class="form-control text-input"
+													placeholder="Max" disabled={FilterPrice}></input>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- fin Filtre par Prix-->
+
+								<!-- Filtre par Quantité-->
+								<div class="col-lg-6 mb-4">
+									<div class="row">
+										<div class="col-12 p-0 mb-2">
+											<input class="form-check-input" type="checkbox" value=""
+												onClick={HandleFilterQuantityClick} id="QuantiteFilter"></input>
+											<label class="form-check-label" htmlFor="QuantiteFilter">Filtre Par Quantité</label>
+										</div>
+										<div class="col-12 pl-4">
+											<div class="input-group d-flex justify-content-around ml-4">
+												<input id="QuantiteFilterMin" type="number"
+													class="form-control text-input" placeholder="Min"
+													disabled={FilterQuantity}></input>
+												<input id="QuantiteFilterMax" type="number"
+													class="form-control text-input" placeholder="Max"
+													disabled={FilterQuantity}></input>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- fin Filtre par Quantité-->
+
+								<!-- Filtre par region-->
+								<div class="col-lg-6">
+									<div class="row">
+										<div class="col-12 p-0">
+											<input class="form-check-input" type="checkbox" value="" id="regionsFilter"
+												onClick={HandleFilterRegionsClick}></input>
+											<label class="form-check-label" htmlFor="regionsFilter">Filtre Par
+												Régions:</label>
+										</div>
+										<div class="col-12 mt-2">
+											<select class="form-select form-select-sm select-input"
+												id="regionsFilterSelect" disabled={FilterRegions}>
+												<option value="Tanger-Tétouan-Al Hoceïma">Tanger-Tétouan-Al Hoceïma
+												</option>
+												<option value="L'Oriental">L'Oriental</option>
+												<option value="Fès-Meknès">Fès-Meknès</option>
+												<option value="Rabat-Salé-Kénitra">Rabat-Salé-Kénitra</option>
+												<option value="Béni Mellal-Khénifra">Béni Mellal-Khénifra</option>
+												<option selected value="Casablanca-Settat">Casablanca-Settat</option>
+												<option value="Marrakech-Safi">Marrakech-Safi</option>
+												<option value="Drâa-Tafilalet">Drâa-Tafilalet</option>
+												<option value="Souss-Massa">Souss-Massa</option>
+												<option value="Guelmim-Oued Noun">Guelmim-Oued Noun</option>
+												<option value="Laâyoune-Sakia El Hamra">Laâyoune-Sakia El Hamra</option>
+												<option value="Dakhla-Oued Ed-Dahab">Dakhla-Oued Ed-Dahab</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- fin Filtre par region-->
+
+								<!-- Filtre par Categories-->
+								<div class="col-lg-6">
+									<div class="row">
+										<div class="col-12 p-0">
+											<input class="form-check-input" type="checkbox" value=""
+												id="categoriesFilter" onClick={HandleFilterCategotyClick}></input>
+											<label class="form-check-label" htmlFor="categoriesFilter">Filtre Par
+												Catégories:</label>
+										</div>
+										<div class="col-12 mt-2">
+											<select class="form-select form-select-sm select-input"
+												id="categoriesFilterSelect" disabled={FilterCategoty}>
+												<option value="Fruits">Fruits</option>
+												<option value="Légumes">Légumes</option>
+												<option value="Légumes">....</option>
+												<option value="Légumes">....</option>
+												<option value="Légumes">....</option>
+												<option value="Légumes">....</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- fin Filtre par Categories-->
+
+							</div>
+
+						</div>

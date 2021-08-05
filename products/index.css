@@ -1,0 +1,119 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*********************************/
+/*            SEARCH             */
+/*********************************/
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-radius: 0.5rem; */
+    border-bottom: rgb(153, 153, 153, 0.3) solid 0.07rem;
+    /* background-color: #ececec6b; */
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.search-box input {
+    padding: 8px;
+    padding-left: 10px;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 0.85rem;
+}
+.search-box input:focus {
+    border: #04AA6D solid 1px;
+    box-shadow: none;
+}
+.search-box input::placeholder {
+    font-size: 0.85rem;
+    color: rgb(153, 153, 153);
+}
+
+.search-box button {
+    font-size: 0.85rem;
+    color: #fff;
+    background-color: #04AA6D;
+    border: #059862 solid 1px;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.search-box button:hover {
+    color: #fff;
+    background-color: #059862;
+}
+
+
+
+.farmer_product {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0.5rem;
+    transition: all .3s;
+    background-color: #ececec4d;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.farmer_product:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.farmer_product .product-img {
+    height: 160px;
+    margin-bottom: 0.6rem;
+    padding: 0;
+}
+.farmer_product .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.farmer_product h4{
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0;
+}
+.farmer_product p{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.farmer_product_rating {
+    color: #febd30;
+    font-size: 0.8rem;
+}
+
+.farmer_product_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: rgb(0, 0, 0, 0.1) solid 0.02rem;
+    padding: 0.5rem 0;
+}
+.farmer_product_footer span{
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+.farmer_product_footer span span{
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #fa8231;
+    padding-bottom: 0.08rem;
+    border-bottom: #fa8231 solid 0.1rem;
+}
