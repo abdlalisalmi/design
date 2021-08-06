@@ -25,21 +25,76 @@
 	<div class="container mt-5 product-container ">
 
 		<div class="row justify-content-center">
-			<div class="col-8">
-				<div class="">
-					<form class="search-box">
+			<div class="col-lg-8">
+				<form class="search">
+					<div class="search-box">
 						<input id="" type="text" placeholder="Que recherchez-vous?"
 							class="form-control" required></input>
-						<button type="submit" class="btn search"> <i class="bi bi-search"></i></button>
-					</form>
-				</div>
+						<button class="btn search-btn"> <i class="bi bi-search"></i></button>
+						<button class="btn filter-btn"> <i class="bi bi-funnel"></i></button>
+					</div>
+					
+					<div class="search-filter filter-active">
+						<h5>Filtres: </h5>
+						<div class="row">
+							<div class="col-lg-4 col-md-6 mb-2">
+								<label for="">Type de vente</label>
+								<select class="form-select">
+									<option selected>choisir le type de vente</option>
+									<option value="1">Vente sur terre</option>
+									<option value="2">Vente à la récolte</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-6 mb-2">
+								<label for="">Pays</label>
+								<select class="form-select">
+									<option selected>choisir le pays</option>
+									<option value="1">Morroco</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-6 mb-2">
+								<label for="">Région</label>
+								<select class="form-select">
+									<option selected>choisir la région</option>
+									<option value="1">Marrakech-safi</option>
+								</select>
+							</div>
+
+							<div class="col-lg-6 col-md-6 mb-2">
+								<label for="">Prix de vente</label>
+								<div class="input-group d-flex justify-content-around">
+									<input type="number" class="form-control mx-1" placeholder="Min"></input>
+									<input type="number" class="form-control mx-1" placeholder="Max"></input>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-2">
+								<label for="">Quantité Globale</label>
+								<div class="input-group d-flex justify-content-around">
+									<input type="number" class="form-control mx-1" placeholder="Min"></input>
+									<input type="number" class="form-control mx-1" placeholder="Max"></input>
+								</div>
+							</div>
+							<!-- <div class="col-lg-6">
+								<label for="">Date De Disponibilité</label>
+								<div class="input-group">
+									<input type="date" class="form-control" disabled></input>
+									<small class="text-muted">Bien être activé si vous sélectionnez le type de vente sur terre</small>
+								</div>
+							</div> -->
+						</div>
+					</div>
+
+				</form>
 			</div>
+
+
 		</div>
 
 
 		<div class="row justify-content-center">
 
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
+
+			<div class="col-lg-3 col-md-4 mx-2 mb-4">
 				<div class="row farmer_product" onClick="location.href='#';">
 					<div class="col-12 product-img">
 						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
@@ -63,11 +118,11 @@
 							<span>quantité: <span>1860 Kg</span></span>
 							<span>prix: <span>7.00 dh/kg</span></span>
 						</div>
-					</div>
+					</div>					
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
+			<div class="col-lg-3 col-md-4 mx-2 mb-4">
 				<div class="row farmer_product" onClick="location.href='#';">
 					<div class="col-12 product-img">
 						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
@@ -91,124 +146,66 @@
 							<span>quantité: <span>1860 Kg</span></span>
 							<span>prix: <span>7.00 dh/kg</span></span>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
-				<div class="row farmer_product" onClick="location.href='#';">
-					<div class="col-12 product-img">
-						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
-							class="img-fluid" />
-					</div>
-					<div class="col-12">
-						<h4>La pomme de terre</h4>
-						<div class="farmer_product_rating">
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-half"></i>
-							<i class="bi bi-star"></i>
-							<i class="bi bi-star"></i>
-						</div>
-						<p>
-							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
-							est un tubercule comestible produit par l'espèce Solanum tuberosum,
-							appartenant à la famille des solanacées.
-						</p>
-						<div class="farmer_product_footer">
-							<span>quantité: <span>1860 Kg</span></span>
-							<span>prix: <span>7.00 dh/kg</span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
-				<div class="row farmer_product" onClick="location.href='#';">
-					<div class="col-12 product-img">
-						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
-							class="img-fluid" />
-					</div>
-					<div class="col-12">
-						<h4>La pomme de terre</h4>
-						<div class="farmer_product_rating">
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-half"></i>
-							<i class="bi bi-star"></i>
-							<i class="bi bi-star"></i>
-						</div>
-						<p>
-							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
-							est un tubercule comestible produit par l'espèce Solanum tuberosum,
-							appartenant à la famille des solanacées.
-						</p>
-						<div class="farmer_product_footer">
-							<span>quantité: <span>1860 Kg</span></span>
-							<span>prix: <span>7.00 dh/kg</span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
-				<div class="row farmer_product" onClick="location.href='#';">
-					<div class="col-12 product-img">
-						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
-							class="img-fluid" />
-					</div>
-					<div class="col-12">
-						<h4>La pomme de terre</h4>
-						<div class="farmer_product_rating">
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-half"></i>
-							<i class="bi bi-star"></i>
-							<i class="bi bi-star"></i>
-						</div>
-						<p>
-							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
-							est un tubercule comestible produit par l'espèce Solanum tuberosum,
-							appartenant à la famille des solanacées.
-						</p>
-						<div class="farmer_product_footer">
-							<span>quantité: <span>1860 Kg</span></span>
-							<span>prix: <span>7.00 dh/kg</span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 mx-2 mb-4">
-				<div class="row farmer_product" onClick="location.href='#';">
-					<div class="col-12 product-img">
-						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
-							class="img-fluid" />
-					</div>
-					<div class="col-12">
-						<h4>La pomme de terre</h4>
-						<div class="farmer_product_rating">
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-fill"></i>
-							<i class="bi bi-star-half"></i>
-							<i class="bi bi-star"></i>
-							<i class="bi bi-star"></i>
-						</div>
-						<p>
-							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
-							est un tubercule comestible produit par l'espèce Solanum tuberosum,
-							appartenant à la famille des solanacées.
-						</p>
-						<div class="farmer_product_footer">
-							<span>quantité: <span>1860 Kg</span></span>
-							<span>prix: <span>7.00 dh/kg</span></span>
-						</div>
-					</div>
+					</div>					
 				</div>
 			</div>
 
-		</div>
-
-		<div class="row justify-content-center">
-			<div class="col-lg-3 col-4 text-center">
-				<div class="show_more">Plus de produits</div>
+			<div class="col-lg-3 col-md-4 mx-2 mb-4">
+				<div class="row farmer_product" onClick="location.href='#';">
+					<div class="col-12 product-img">
+						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
+							class="img-fluid" />
+					</div>
+					<div class="col-12">
+						<h4>La pomme de terre</h4>
+						<div class="farmer_product_rating">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<p>
+							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
+							est un tubercule comestible produit par l'espèce Solanum tuberosum,
+							appartenant à la famille des solanacées.
+						</p>
+						<div class="farmer_product_footer">
+							<span>quantité: <span>1860 Kg</span></span>
+							<span>prix: <span>7.00 dh/kg</span></span>
+						</div>
+					</div>					
+				</div>
 			</div>
+
+			<div class="col-lg-3 col-md-4 mx-2 mb-4">
+				<div class="row farmer_product" onClick="location.href='#';">
+					<div class="col-12 product-img">
+						<img src='https://cdn.bioalaune.com/img/article/thumb/900x500/29033-12_facons_dutiliser_la_pomme_de_terre_au_quotidien.jpg'
+							class="img-fluid" />
+					</div>
+					<div class="col-12">
+						<h4>La pomme de terre</h4>
+						<div class="farmer_product_rating">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<p>
+							La pomme de terre ou patate (langage familier, canadianisme et belgicisme),
+							est un tubercule comestible produit par l'espèce Solanum tuberosum,
+							appartenant à la famille des solanacées.
+						</p>
+						<div class="farmer_product_footer">
+							<span>quantité: <span>1860 Kg</span></span>
+							<span>prix: <span>7.00 dh/kg</span></span>
+						</div>
+					</div>					
+				</div>
+			</div>
+
 		</div>
 
 	</div>
