@@ -227,3 +227,76 @@
   letter-spacing: 0.02em;
   border-bottom: 1px solid rgba(67, 74, 84, 0.1);
 }
+
+
+
+
+
+
+
+.step-checkout_item_content h5 {
+  font-size: 0.9rem;
+  padding: 0.8rem 0.8rem 0.8rem 0;
+  border-bottom: #00000019 solid 0.01rem;
+}
+.step-checkout_item_content label {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+}
+.step-checkout_item_content input,
+.step-checkout_item_content select
+ {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.686);
+  border: #00000019 solid 0.1rem;
+}
+.step-checkout_item_content input:focus,
+.step-checkout_item_content select:focus
+ {
+  box-shadow: none;
+  border: #04AA6D solid 0.1rem;
+}
+.step-checkout_item_content .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+}
+.step-checkout_item_content .nav .nav-item {
+  width: 50%;
+  padding: 0 0.1rem;
+}
+.step-checkout_item_content .nav .nav-link {
+  border-radius: 0.5rem;
+  color: rgba(0, 0, 0, 0.583);
+  width: 100%;
+  border: #00000012 0.1rem solid;
+}
+.step-checkout_item_content .nav .nav-link.active {
+  background-color: #04AA6D;
+  color: #fff;
+}
+.step-checkout_item_content p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.741);
+  margin-bottom: 0.1rem;
+}
+.step-checkout_item_content small {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.step-checkout_item_content .nav-btn {
+  font-size: 0.8rem;
+  color: #04AA6D;
+  /* background-color: #04AA6D; */
+  padding: 0.3rem;
+  border: #04AA6D solid 0.1rem;
+  border-radius: 0.5rem;
+}
+.step-checkout_item_content .nav-btn:hover {
+  color: #fff;
+  background-color: #04AA6D;
+}
