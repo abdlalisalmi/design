@@ -1,0 +1,74 @@
+
+
+
+.navbar .navbar-toggler {
+  background-color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  border: rgb(0, 0, 0, 0.8) solid .1rem;
+  color: #04AA6D !important;
+  transition: all .3s;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  border: #04AA6D solid .1rem;
+  color: #04AA6D;
+}
+.navbar .navbar-toggler:active {
+  box-shadow: none;
+  border: #04AA6D solid .1rem;
+}
+
+.navbar ul li{
+  font-size: 0.88rem;
+}
+
+.navbar .nav-right a{
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  text-decoration: none;
+  margin: 0 0.2rem;
+  color: rgb(0, 0, 0, 0.9);
+  transition: all 0.3s;
+}
+.navbar .nav-right a.login{
+  padding: 0.2rem 1rem;
+  color: #04AA6D;
+}
+.navbar .nav-right a.login:hover{
+  border-bottom: #04AA6D solid 0.1rem;
+}
+.navbar .nav-right a.register{
+  color: #04AA6D;
+  border-radius: 0.3rem;
+  border: #04AA6D 0.1rem solid;
+}
+.navbar .nav-right a.register:hover{
+  color: #fff;
+  background-color: #04AA6D;
+}
+
+.main {
+  height: 80vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.083); */
+  border-top: rgba(0, 0, 0, 0.11) solid 0.01rem;
+  padding: 0.5rem 1rem;
+}
+.footer a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.1rem 0.3rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer a:hover {
+  color: #04AA6D;
+}
