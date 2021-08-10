@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.checkout_unauthorized {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.checkout_unauthorized .unauthorized {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.025);
+  border: rgba(0, 0, 0, 0.028) solid 0.1rem;
+}
+.checkout_unauthorized .unauthorized div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.checkout_unauthorized .unauthorized div button {
+  border: rgba(0, 0, 0, 0.049) solid 0.1rem;
+  padding: 0.2rem 1rem;
+  margin: 0 0.2rem;
+  font-size: 0.9rem;
+}
+.checkout_unauthorized .unauthorized div button:hover {
+  background-color: rgba(0, 0, 0, 0.030);
+}
