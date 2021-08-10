@@ -61,6 +61,19 @@
   border-top: rgba(0, 0, 0, 0.11) solid 0.01rem;
   padding: 0.5rem 1rem;
 }
+.footer div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer select{
+  border: rgba(0, 0, 0, 0.192) solid 0.1rem;
+}
+.footer select:focus{
+  box-shadow: none;
+  border: #04AA6D solid 0.1rem;
+}
 .footer a {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.9rem;
@@ -72,3 +85,5 @@
 .footer a:hover {
   color: #04AA6D;
 }
+
+
