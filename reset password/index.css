@@ -1,0 +1,74 @@
+
+/*  */
+
+.reset_password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.reset_password .reset-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: rgba(0, 0, 0, 0.1) solid 0.1rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+}
+.reset_password .reset-card h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0 0.6rem 0;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 0.01rem;
+  opacity: 0.9;
+}
+.reset_password .reset-card .text {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0.6rem 0 0.4rem 0;
+  opacity: 0.85;
+}
+.reset_password .reset-card div {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.reset_password .reset-card .rest-btn {
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.8rem;
+  background-color: #04AA6D;
+  color: #fff;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+.reset_password .reset-card .rest-btn:hover {
+  background-color: #008c59;
+}
+.reset_password .reset-card .links {
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.8;
+}
+.reset_password .reset-card input {
+  font-size: 0.8rem;
+  border: rgb(237, 237, 237) solid 0.1rem;
+  background-color: #fff;
+}
+.reset_password .reset-card input:focus {
+  box-shadow: none;
+  border: #008c59 solid 0.1rem;
+} 
+.reset_password .reset-card .phone {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #008c59;
+  text-decoration: underline;
+} 
+.reset_password .reset-card label {
+  font-size: 0.8rem;
+}
+.reset_password .reset-card .icon {
+  text-align: center;
+  font-size: 6rem;
+  color: #008c59;
+}
