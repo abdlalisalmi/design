@@ -1,0 +1,10 @@
+
+.footer a:hover {
+  color: #04AA6D;
+}
+
+
+.modal_body_limit {
+  height: 360px;
+  overflow-y: scroll;
+}
