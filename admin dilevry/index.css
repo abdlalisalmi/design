@@ -1,0 +1,42 @@
+
+
+
+
+.table_input {
+  border-radius: 0.5rem !important;
+  padding: 0.2rem 1rem !important;
+  border: rgba(0, 0, 0, 0.097) solid 0.01;
+  box-shadow: none;
+  /* width: unset !important; */
+}
+.table_input:focus {
+  box-shadow: none !important;
+  border: #04AA6D solid 0.01 !important;
+}
+
+.table_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.table_btn button{
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin: 0 0.2rem;
+}
+.table_btn .edit{
+  background-color: #04AA6D;
+}
+.table_btn .edit:hover{
+  background-color: #037e51;
+  color: #fff;
+}
+
+.table_btn .cancel{
+  background-color: #e8ae44;
+}
+.table_btn .cancel:hover{
+  background-color: #d09c3d;
+  color: #fff;
+}
