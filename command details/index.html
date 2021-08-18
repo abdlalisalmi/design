@@ -40,33 +40,97 @@
 						<div class="card">
 							<h5 class="card-header">Command details</h5>
 							<div class="card-body">
+
+								<!-- <table class="table">
+									<tr>
+										<td class="key">Sell type</td>
+										<td class="value">___</td>
+									</tr>
+									<tr>
+										<td class="key">Le produit</td>
+										<td class="value">___</td>
+									</tr>
+									<tr>
+										<td class="key">le prix totale</td>
+										<td class="value">___/___</td>
+									</tr>
+									<tr>
+										<td class="key">advanced price</td>
+										<td class="value">___</___/td>
+									</tr>
+								</table> -->
+
 								<table class="table">
 									<tr>
-										<td class="key">Paymet Type</td>
-										<td class="value">Bank</td>
+										<td class="key">Sell type</td>
+										<td class="value">___</td>
 									</tr>
 									<tr>
-										<td class="key">Paymet Bill</td>
-										<td class="value"><a href="#"><i class="bi bi-image"></i> Click to show</a></td>
+										<td class="key">Le produit</td>
+										<td class="value">___</td>
+									</tr>
+									<tr>
+										<td class="key">Le prix de produit</td>
+										<td class="value">___/___</td>
+									</tr>
+									<tr>
+										<td class="key">Le prix totale</td>
+										<td class="value">___/___</td>
+									</tr>
+									<tr>
+										<td class="key">Quantity</td>
+										<td class="value">___/___</td>
 									</tr>
 								</table>
+
 							</div>
-						  </div>
+						</div>
 					</div>
 
 					<div class="col-lg-4 command_status	mb-4">
 						<div class="card">
-							<h5 class="card-header">Statut</h5>
+							<h5 class="card-header">Commande Statut</h5>
 							<div class="card-body">
-								<select class="form-select" aria-label=".form-select-sm example">
-									<option selected>Command statu</option>
-									<option value="1">Pending</option>
-									<option value="2">Ongoing</option>
-									<option value="3">Completed</option>
-								</select>
-								<button class="btn">Update</button>
+								<div class="update">
+									<select class="form-select" aria-label=".form-select-sm example">
+										<option value="1">Pending</option>
+										<option value="2">Ongoing</option>
+										<option value="3">Completed</option>
+									</select>
+									<button class="btn">Update</button>
+								</div>
+								<small class="text-muted">Update the command status</small>
+								<!-- if staust == pending -->
+								<div class="delete_command">
+									<span>Delete this command</span>
+									<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Delete</button>
+									<!-- Modal -->
+									<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+										data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+										aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"
+														aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary"
+														data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-danger">Delete</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<small class="text-muted">You can delete this command because it's pending</small>
+
 							</div>
-						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -111,7 +175,7 @@
 									</tr>
 								</table>
 							</div>
-						  </div>
+						</div>
 					</div>
 
 					<div class="col-lg-8 mb-4 payments">
@@ -129,7 +193,7 @@
 									</tr>
 								</table>
 							</div>
-						  </div>
+						</div>
 					</div>
 
 				</div>

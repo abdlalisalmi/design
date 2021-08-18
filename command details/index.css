@@ -37,22 +37,63 @@
   font-size: 0.9rem;
   /* text-align: center; */
 }
-.command_details .command_status .card-body{
+.command_details .command_status .card-body .update{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.command_details .command_status button{
-  font-size: 0.9remrem;
-  font-weight: 500;
+.command_details .command_status .card-body small{
+  font-size: 0.7rem;
+}
+.command_details .command_status .update button{
+  font-size: 0.9rem !important;
+  font-weight: 400;
   color: rgb(255, 255, 255);
+  padding: 0.2rem 1rem;
   background-color: #1dd692;
   border-radius: 0.4rem;
   margin-left: 0.4rem !important;
 }
-.command_details .command_status button:hover{
+.command_details .command_status .update button:hover{
   background-color: #13b87b;
+}
+.command_details .command_status .update select{
+  font-size: 0.9rem !important;
+  font-weight: 400;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  color: rgba(0, 0, 0, 0.693);
+}
+.command_details .command_status .delete_command {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  padding: 0.5rem 0;
+  border-top: rgba(0, 0, 0, 0.172) solid 0.01rem;
+}
+.command_details .command_status .delete_command {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  padding: 0.5rem 0;
+  border-top: rgba(0, 0, 0, 0.172) solid 0.01rem;
+  margin-bottom: 0;
+}
+.command_details .command_status .delete_command button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem !important;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
 }
 
 
