@@ -1,0 +1,72 @@
+*:focus{
+  box-shadow: none !important;
+}
+
+.command_details {
+  padding: 1.5rem 2rem !important;
+  background-color: rgb(128,128,128, 0.07);
+}
+
+.command_details .title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 0.01rem;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+.command_details .title h4{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+.command_details .title button{
+  font-size: 0.9remrem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: #1dd692;
+  border-radius: 0.4rem;
+}
+.command_details .title button:hover{
+  background-color: #13b87b;
+}
+
+.command_details .card .card-header {
+  /* background-color: blanchedalmond; */
+  font-size: 0.9rem;
+  /* text-align: center; */
+}
+.command_details .command_status .card-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.command_details .command_status button{
+  font-size: 0.9remrem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: #1dd692;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem !important;
+}
+.command_details .command_status button:hover{
+  background-color: #13b87b;
+}
+
+
+.command_details .card-body .key{
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.8;
+  width: 40%;
+}
+.command_details .card-body .value{
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 1;
+}
+.command_details .card-body a{
+  text-decoration: none;
+}
