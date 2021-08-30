@@ -37,3 +37,36 @@
     font-weight: 500;
     font-size: 17px;
 }
+
+
+
+
+.eng-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eng-chart p{
+    margin: 0;
+}
+.eng-chart .icon i{
+    font-size: 60px;
+    color:  rgba(0, 0, 0, 0.712);
+}
+.eng-chart .time {
+    font-size: 16px;
+    font-weight: 600;
+}
+.eng-chart .msg {
+    font-size: 13px;
+    font-weight: 400;
+}
+.eng-chart .combine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+}
