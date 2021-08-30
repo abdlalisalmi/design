@@ -1,0 +1,28 @@
+
+
+.user_search {
+    background-color: aliceblue;
+    padding: 0.4rem;
+}
+
+.user_search .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.user_search .filter .form-check {
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+}
+
+.user_search .search {
+    display: flex;
+    flex-direction: row;
+}
+.user_search .search input{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.user_search .search input:focus{
+    box-shadow: none;
+}
