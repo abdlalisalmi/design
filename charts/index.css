@@ -1,7 +1,7 @@
 
 
 
-.device-chart {
+/* .device-chart {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -29,8 +29,6 @@
 .device-chart .data{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around;
-    align-items: center; */
 }
 .device-chart .data p{
     margin: 0;
@@ -69,4 +67,46 @@
     width: 100%;
     font-size: 13px;
     font-weight: 400;
+} */
+
+.country-chart .title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.country-chart .chart-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 400;
+}
+.country-chart table th{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.country-chart table td{
+    line-height: 1;
+    padding: 4px 8px;
+    border-right: black solid 1px;
+}
+.country-chart .table .last-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.country-chart .table .last-year .chart-progress{
+    width:65%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    overflow: hidden;
+}
+.country-chart .table .last-year .chart-progress .chart-progress-bar{
+    background-color: rgb(0, 157, 255);
+    height: 100%;
+    border-radius: 5px;
 }
