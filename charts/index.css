@@ -110,3 +110,28 @@
     height: 100%;
     border-radius: 5px;
 }
+
+
+
+
+
+
+.products-chart .title{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background-color: rgba(250, 235, 215, 0.44);
+    padding: 5px 10px;
+    border-radius:  8px;
+}
+.products-chart thead th{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: rgba(0, 0, 0, 0.098) solid 0.01rem !important;
+}
+.products-chart tbody tr:hover{
+    background-color: rgba(250, 235, 215, 0.255);
+}
