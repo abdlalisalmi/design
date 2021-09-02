@@ -20,40 +20,40 @@
 	<title>Hello, world!</title>
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisualization);
+	<script type="text/javascript">
+		google.charts.load('current', { 'packages': ['corechart'] });
+		google.charts.setOnLoadCallback(drawVisualization);
 
-      function drawVisualization() {
-        var data = google.visualization.arrayToDataTable([
-          ['Month', 'Visits 2021','Visits 2020'],
-          ['01',     629,       252],
-          ['02',     629,       25],
-          ['03',     629,       569],
-          ['04',     629,       569],
-          ['05',     522,       614],
-          ['06',     599,       682],
-          ['07',     587,       623],
-          ['08',     615,       609],
-          ['09',     629,       700],
-          ['10',     629,       569],
-          ['11',     629,       863],
-          ['12',     629,       569],
-        ]);
+		function drawVisualization() {
+			var data = google.visualization.arrayToDataTable([
+				['Month', 'Visits 2021', 'Visits 2020'],
+				['01', 629, 252],
+				['02', 629, 25],
+				['03', 629, 569],
+				['04', 629, 569],
+				['05', 522, 614],
+				['06', 599, 682],
+				['07', 587, 623],
+				['08', 615, 609],
+				['09', 629, 700],
+				['10', 629, 569],
+				['11', 629, 863],
+				['12', 629, 569],
+			]);
 
-        var options = {
-          	title : 'Visits - Last 12 months',
-			legend: {position: 'top', alignment: 'center', textStyle: {fontSize: 14}},
-			seriesType: 'bars',
-			colors: ['#66c6e3','#0598d6'],
-			pointSize: 5,
-			series: {1: {type: 'line'}},
-        };
+			var options = {
+				title: 'Visits - Last 12 months',
+				legend: { position: 'top', alignment: 'center', textStyle: { fontSize: 14 } },
+				seriesType: 'bars',
+				colors: ['#66c6e3', '#0598d6'],
+				pointSize: 5,
+				series: { 1: { type: 'line' } },
+			};
 
-        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
+			var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+		}
+	</script>
 
 
 </head>
@@ -63,11 +63,11 @@
 	<br>
 	<br>
 	<br>
-	
-	<div class="container">
+
+	<!-- <div class="container">
 		<div class="row">
 			
-			<!-- <div class="col-3">
+			<div class="col-3">
 				<h5 class="text-center">Devices</h5>
 				<div class="device-chart">
 					<div class="icon">
@@ -110,9 +110,9 @@
 						</span>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			
-			<!-- <div class="col-2">
+			<div class="col-2">
 				<div class="eng-chart">
 					<div class="icon">
 						<i class="bi bi-clock-history"></i>
@@ -148,9 +148,9 @@
 						<p>vs. last year</p>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			
-			<!-- <div class="col-4">
+			<div class="col-4">
 				<div class="country-chart">
 					<div class="title">Top 10 country visits</div>
 						<table class="table table-borderless">
@@ -213,7 +213,7 @@
 							</tbody>
 						</table>
 				</div>
-			</div> -->
+			</div>
 
 			<div class="col-12">
 				<br>
@@ -222,7 +222,7 @@
 			</div>
 
 			
-			<!-- <div id="chart_div" style="width: 900px; height: 500px;"></div> -->
+			<div id="chart_div" style="width: 900px; height: 500px;"></div>
 			
 			<div class="col-lg-4">
 				<div class="products-chart">
@@ -304,6 +304,33 @@
 						</tbody>
 					</table>
 				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="navigation-chart">
+					<div class="chart-header">
+						<div class="page-name"></div>
+						<div class="path">% Path Axes</div>
+						<div class="percent"> vs. last year</div>
+					</div>
+					<div class="chart-body">
+						<div class="page">
+							<span class="name">Products Page products</span>
+							<i class="bi bi-caret-down-fill"></i>
+						</div>
+						<div class="statistique">
+							<span>80%</span>
+							<div>
+								<!-- <i class="bi bi-caret-up-fill text-success"></i> -->
+								<i class="bi bi-caret-down-fill text-danger"></i>
+								56.50%
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>

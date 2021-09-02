@@ -1,7 +1,7 @@
 
 
 
-/* .device-chart {
+.device-chart {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,7 +67,7 @@
     width: 100%;
     font-size: 13px;
     font-weight: 400;
-} */
+}
 
 .country-chart .title{
     text-align: center;
@@ -134,4 +134,61 @@
 }
 .products-chart tbody tr:hover{
     background-color: rgba(250, 235, 215, 0.255);
+}
+
+
+
+
+
+.navigation-chart .chart-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+.navigation-chart .chart-header .page-name{
+    width: 65%;
+}
+.navigation-chart .chart-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.navigation-chart .chart-body .page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.navigation-chart .chart-body .page span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+}
+.navigation-chart .chart-body .page i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 60px;
+    color: #06b7d6;
+    height: 40px;
+}
+.navigation-chart .chart-body .statistique{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.navigation-chart .chart-body .statistique span{
+    background-color: gainsboro;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
